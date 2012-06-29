@@ -6,3 +6,4 @@ category:
 tags: []
 ---
 {% include JB/setup %}
+[链接测试](/2012/06/29/no-title/)
