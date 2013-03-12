@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我的第一个iOS应用
-permalink: my-first-ios-app.html
+permalink: my-first-ios-app
 tagline: 
 description: 我即将上线的第一款免费iOS应用
 date: 2013-03-12 10:25:04 +08:00
@@ -13,7 +13,11 @@ tags: "ios toys transformers"
 
 这只是一个用于练习iOS的基本开发技巧的应用，同时用于展示个人收藏的一些玩具模型。希望同好迷友们喜欢，多多交流。
 
+应用正在准备提交，提交并审核通过后，将放出下载链接并更新简介。
+
 欢迎程序员同行朋友及变形金刚迷友们关注[我的微博](http://www.weibo.com/fatbigbright)。还请请多指教。
+
+![图片测试]({{ site.img_url }}/06_38.jpg)
 
 ####2. 已经实现的功能
 
