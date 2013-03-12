@@ -11,16 +11,16 @@ tags: "software markdown"
 
 * MarkdownPad
 
-      主页： [markdownpad.com](http://markdownpad.com/)
+   主页： [markdownpad.com](http://markdownpad.com/)
 
-      分为Free版和Pro版，后者会提供比前者更为强大的功能，当然，需要支付14.95美刀啦~
+   分为Free版和Pro版，后者会提供比前者更为强大的功能，当然，需要支付14.95美刀啦~
 
-      ![MarkdownPad2]({{ site.img_url }}/MarkdownPad2.png)
+   ![MarkdownPad2]({{ site.img_url }}/MarkdownPad2.png)
 
 * MarkPad
 
-      主页： [code52.org/DownmarkerWPF/](http://code52.org/DownmarkerWPF/)
-
-      我现在正在使用的它来进行博客的编辑。对于我来说已经够用了。而且最重要的是，它内置了jekyll page文件模板，可以在文档创建时加入jekyll相兼容的说明内容。
+   主页： [code52.org/DownmarkerWPF/](http://code52.org/DownmarkerWPF/)
+   
+   我现在正在使用的它来进行博客的编辑。对于我来说已经够用了。而且最重要的是，它内置了jekyll page文件模板，可以在文档创建时加入jekyll相兼容的说明内容。
       
-      ![MarkPad]({{ site.img_url }}/MarkPad.png)
+   ![MarkPad]({{ site.img_url }}/MarkPad.png)
