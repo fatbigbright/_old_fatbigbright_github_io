@@ -13,15 +13,17 @@ tags: "ios toys transformers"
 
 这只是一个用于练习iOS的基本开发技巧的应用，同时用于展示个人收藏的一些玩具模型。希望同好迷友们喜欢，多多交流。
 
-应用正在准备提交，提交并审核通过后，将放出下载链接并更新简介。
+应用正在等待审核~~准备提交~~，~~提交并~~审核通过后，将放出下载链接并更新简介，希望能顺利审核通过。
 
 欢迎程序员同行朋友及变形金刚迷友们关注[我的微博](http://www.weibo.com/fatbigbright)。还请请多指教。
 
 以下是应用运行截图。
 
 ![截图1]({{ site.img_url }}/ProductShow_iphone1.png)
-
 ![截图2]({{ site.img_url }}/ProductShow_iphone2.png)
+
+再放个正在审核的截图，鸡冻ing！
+![正在等待审核]({{ site.img_url }}/waiting_for_review.png)
 
 ####2. 已经实现的功能
 
