@@ -1,4 +1,4 @@
-# This is the default format. 
+﻿# This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title 
 
@@ -9,7 +9,7 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : fatbigbright demo site
+title : 胖大海的杂烩站
 tagline: Site Tagline
 author :
   name : Chang, Liang

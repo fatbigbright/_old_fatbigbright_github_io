@@ -1,36 +1,17 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: 胖大海的杂烩站
+tagline: 
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+## 本站简介
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
-
-## Update Author Attributes
-
-In `_config.yml` remember to specify your own data:
+本站是使用jekyll博客系统搭建的个人主页，用于分享一下我自己的编程心得、兴趣爱好、以及开发的程序的介绍等。
     
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+## 文章列表
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
+以下是文章列表
 
 <ul class="posts">
   {% for post in site.posts %}
@@ -38,9 +19,8 @@ Here's a sample "posts list".
   {% endfor %}
 </ul>
 
-## To-Do
+## 感谢
 
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+感谢所有光临本站的朋友。请关注[我的微博](weibo.com/fatbigbright)。
 
 
