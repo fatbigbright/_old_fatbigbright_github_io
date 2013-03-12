@@ -19,8 +19,9 @@ tags: "ios toys transformers"
 
 以下是应用运行截图。
 
-![截图1]({{ site.img_url }}/ProductShow_iphone1.jpg)
-![截图2]({{ site.img_url }}/ProductShow_iphone2.jpg)
+![截图1]({{ site.img_url }}/ProductShow_iphone1.png)
+
+![截图2]({{ site.img_url }}/ProductShow_iphone2.png)
 
 ####2. 已经实现的功能
 
