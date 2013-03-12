@@ -21,6 +21,6 @@ tagline:
 
 ## 感谢
 
-感谢所有光临本站的朋友。请关注[我的微博](weibo.com/fatbigbright)。
+感谢所有光临本站的朋友。请关注[我的微博](http://www.weibo.com/fatbigbright)。
 
 

@@ -13,7 +13,7 @@ tags: "ios toys transformers"
 
 这只是一个用于练习iOS的基本开发技巧的应用，同时用于展示个人收藏的一些玩具模型。希望同好迷友们喜欢，多多交流。
 
-欢迎程序员同行朋友及变形金刚迷友们关注[我的微博](weibo.com/fatbigbright)。还请请多指教。
+欢迎程序员同行朋友及变形金刚迷友们关注[我的微博](http://www.weibo.com/fatbigbright)。还请请多指教。
 
 ####2. 已经实现的功能
 
