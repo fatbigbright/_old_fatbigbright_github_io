@@ -11,6 +11,12 @@ tagline:
     
 ## 文章列表
 
+####长期置顶：
+
+[我的第一个iOS应用]({{ BASE_PATH }}/my-first-ios-app/)
+
+[iOS开发笔记]({{ BASE_PATH }}/ios-dev-notes/)
+
 以下是文章列表
 
 <ul class="posts">

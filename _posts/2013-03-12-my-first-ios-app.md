@@ -19,11 +19,11 @@ tags: "ios toys transformers"
 
 以下是应用运行截图。
 
-![截图1]({{ site.img_url }}/ProductShow_iphone1.png)
-![截图2]({{ site.img_url }}/ProductShow_iphone2.png)
+![截图1]({{ BASE_PATH }}/assets/images/ProductShow_iphone1.png)
+![截图2]({{ BASE_PATH }}/assets/images/ProductShow_iphone2.png)
 
 再放个正在审核的截图，鸡冻ing！
-![正在等待审核]({{ site.img_url }}/waiting_for_review.png)
+![正在等待审核]({{ BASE_PATH }}/assets/images/waiting_for_review.png)
 
 ####2. 已经实现的功能
 
