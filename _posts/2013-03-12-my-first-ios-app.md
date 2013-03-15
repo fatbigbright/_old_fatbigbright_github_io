@@ -5,7 +5,7 @@ permalink: my-first-ios-app
 tagline: 
 description: 我即将上线的第一款免费iOS应用
 date: 2013-03-12 10:25:04 +08:00
-tags: "ios toys transformers"
+tags: "iOS toys transformers"
 ---
 ###我的第一款iOS应用
 
