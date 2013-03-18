@@ -24,6 +24,7 @@ tags: "iOS toys transformers"
 
 再放个正在审核的截图，鸡冻ing！
 ![正在等待审核]({{ BASE_PATH }}/assets/images/waiting_for_review.png)
+审核被拒了，再改！
 
 ####2. 已经实现的功能
 
@@ -41,3 +42,6 @@ tags: "iOS toys transformers"
 
 * 开发外部网络服务，使应用可访问网络服务实时更新玩具收藏信息。
 
+####4. 审核过程实录
+
+2013-03-18 第一次审核被Rejected了，理由是：Apple and our customers place a high value on simple, refined, creative, well thought through interfaces. They take more work but are worth it. Apple sets a high bar. If your user interface is complex or less than very good it may be rejected。看来是我的应用写得太简单了……需要再重新看看[iOS用户界面指南](https://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/Introduction/Introduction.html)。
