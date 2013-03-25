@@ -1,0 +1,22 @@
+table, td, th
+{
+   border:1px solid grey;
+   text-align: left;
+}
+th
+{
+   background-color: grey;
+   color: white;
+}
+#tb11
+{
+   width: 90%
+}
+.gesture
+{
+   width: 20%;
+}
+.action
+{
+   width: 80%;
+}
