@@ -15,6 +15,9 @@ tags: "iOS dev UI"
 
 另外，个人英语水平实在有限，也希望看到这篇文章的朋友能够花出宝贵的时间给文中错误或不当的翻译予以指摘，请随意喷。
 
+######2013-05-15 更新
+刚刚发现苹果的开发者官网上已经提供了这篇文章的一个[简化翻译版](http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOSCh/chapters/RM_iHIG_Station/Fundamentals/Fundamentals.html)。可喜的是我对某些名字的译名和官方的译名还算接近。不管人家官方的了，自己翻自己的，本来这也是自娱的一次翻译训练。
+
 ##简介
 
 *iOS用户界面指南*提供了详细的指南与设计原则，旨在帮助你为你的iOS应用设计出优秀的交互界面和良好的使用体验。
