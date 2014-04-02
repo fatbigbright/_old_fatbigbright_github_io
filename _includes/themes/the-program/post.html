@@ -14,7 +14,7 @@
 					{{ content }}
 					<div class="meta">
 						<p class="date-publish">
-							Published: 
+							发布时间: 
 							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
 							<span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
 							<span class="day">{{ page.date | date: '%d' }}</span>
@@ -22,12 +22,12 @@
 							</date>
 						</p>
 						<ul class="list-category list-linear">
-							<li class="list-head">category: </li>
+							<li class="list-head">分类: </li>
 							{% assign categories_list = page.categories %}
 							{% include JB/categories_list %}
 						</ul>
 						<ul class="list-tag list-linear">
-							<li class="list-head">tags: </li>
+							<li class="list-head">标签: </li>
 							{% assign tags_list = page.tags %}
 							{% include JB/tags_list %}
 						</ul>
@@ -36,8 +36,7 @@
 				<div class="misc-content">
 					<div class="social">
 						<ul class="list-linear">
-							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="{{ site.author.twitter }}" data-lang="en">Tweet</a></div></li>
-							<li><div class="twitter-follow"><a href="https://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+                            <li>转发到微博</li>
 						</ul>
 					</div>
 					<div class="comment">
@@ -61,7 +60,7 @@
 						</ul>
 					</nav>
 					<p class="gotop">
-						<a href="#page">Back to Top</a>
+						<a href="#page">回到页首</a>
 					</p>
 				</div>
 			</footer>

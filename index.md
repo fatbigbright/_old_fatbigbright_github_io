@@ -18,13 +18,3 @@ tagline:
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-## 备注
-* 2013-03-20 夜
-
-发现之前_config.yml中的引擎配置语句的位置有误，导致配置未起作用而无序列表项若以中文开头，则列表不能正确生成。将这句“markdown: rdiscount”移至语句“pygments:true”这个语句之上，才能使引擎配置生效。
-## 感谢
-
-感谢所有光临本站的朋友。请关注[我的微博](http://www.weibo.com/fatbigbright)。
-
-
