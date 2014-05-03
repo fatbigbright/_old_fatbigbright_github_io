@@ -18,17 +18,28 @@ tags: [博客阅读笔记, 微软, dev]
 
 我们在平常工作中，在字符编码方面经常会接触到一些名字很类似的词，比如ASCII与ANSI，GB2312和GBK一类。本文将一对一对地介绍一下它们各自有什么关系，又有什么不同。
 
-但是，在介绍它们之前，必须先要介绍一些字符编码方面的历史和背景知识，我本来是想避免这种俗套的文章脉络，但发现不行。
+随着作者对资料的查询和整理理解的过程，本文几易撰写思路。下面的第一部分也从字符编码的历史修改成了字符集与相应标准的关系。在理解字符集之前先来梳理一下这些信息，个人认为是完全有必要的。
 
-##字符编码的历史
+##字符编码及相应标准
 
-详细的历史可以参见由腾讯的程序员撰写的[这篇文章](http://djt.qq.com/article/view/658?ADTAG=email.InnerAD.weekly.20130902&bsh_bid=281085951)。这里仅按时间的先后顺序做一下梳理。
+字符编码及标准的详细历史可以参见由腾讯的程序员撰写的[这篇文章](http://djt.qq.com/article/view/658?ADTAG=email.InnerAD.weekly.20130902&bsh_bid=281085951)。
 
-1. [ASCII](http://zh.wikipedia.org/wiki/ASCII)：美国信息交换标准代码（**A**merican **S**tandard **C**ode for **I**nformation **I**nterchange）。它是一种7bit位编码方式——实际当中，是用8位即一个字节来存储，最高位b7用作[奇偶校验](http://zh.wikipedia.org/zh-cn/%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E4%BD%8D)——，7个bit位最多可以表示128个字符（2的7次方），它包含了各种非打印控制符、符号、数字及英文大小写字母。也就是说ASCII是128个字符集合的字符编码集。
-2. [EASCII](http://zh.wikipedia.org/wiki/EASCII)：扩展美国信息交换标准代码（**E**xtended **ASCII**）,它将ASCII的b7这个奇偶校验位包括进来，用以扩展编码集的可表示范围，从而字符容量增加到了256个。其中编号0-127的字符与ASCII相同，128-255字符作为扩充的部分，表示一些表格符号、计算符号、希腊符号及特殊的拉丁符号，用以适应欧洲各非英语国家的字符使用需要。也就是说，它是完全兼容ASCII编码的。
-3. [GB2312](http://zh.wikipedia.org/wiki/GB_2312)：由中国国家标准总局制订的适应中国大陆地区简体字使用的字符编码。收录了6763个汉字及682个字符（包括拉丁字母、希腊字母、日文平假名及片假名字母、俄语西里尔字母）。
-4. [BIG5](http://zh.wikipedia.org/zh-cn/%E5%A4%A7%E4%BA%94%E7%A2%BC)：港澳台同胞使用的繁体汉字字符编码。也称大五码。Windows的繁体中文版是基于这种编码进行开发的。它包括了13,060个汉字及441个字符。它也是一种双字节编码方式，每个字符的首个字节为高位字节，第二个字节为低位字节。
-5. [ISO/IEC 8859-1](http://zh.wikipedia.org/wiki/ISO/IEC_8859-1)：为国际标准化组织制订的8位字符集。它以ASCII为基础，扩展了集合范围，供附加符号的拉丁语言的使用。又称Latin-1或“西欧语言”。从维基百科来看，它与EASCII基本是兼容的。但二者有什么关系，没有查到。
+1. ASCII字符集与ISO/IEC 646标准
+   * [ASCII](http://zh.wikipedia.org/wiki/ASCII)：美国信息交换标准代码（**A**merican **S**tandard **C**ode for **I**nformation **I**nterchange）。它是一种7bit位编码方式——实际当中，是用8位即一个字节来存储，最高位b7用作[奇偶校验](http://zh.wikipedia.org/zh-cn/%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E4%BD%8D)——，7个bit位最多可以表示128个字符（2的7次方），它包含了各种非打印控制符、符号、数字及英文大小写字母。也就是说ASCII是128个字符集合的字符编码集。
+   * [ISO/IEC 646](http://zh.wikipedia.org/wiki/ISO_646)，简言之，ISO/IEC小组在ASCII的基础上将其标准化，就是ISO/IEC 646标准。   
+2. EASCII字符集与ISO/IEC 8859标准
+   * [EASCII](http://zh.wikipedia.org/wiki/EASCII)：扩展美国信息交换标准代码（**E**xtended **ASCII**）,它将ASCII的b7这个奇偶校验位包括进来，用以扩展编码集的可表示范围，从而字符容量增加到了256个。其中编号0-127的字符与ASCII相同，128-255字符作为扩充的部分，表示一些表格符号、计算符号、希腊符号及特殊的拉丁符号，用以适应欧洲非英语国家的字符使用需要。也就是说，它是完全兼容ASCII编码的。ISO/IEC小组制定的[ISO/IEC 8859](http://zh.wikipedia.org/zh-cn/ISO/IEC_8859)标准之一[ISO/IEC 8859-1](http://zh.wikipedia.org/wiki/ISO/IEC_8859-1)，从维基百科上来看，是基于EASCII进行标准化的。ISO/IEC 8859是一系列8位西文字符编码标准，它们基于ASCII对不同的西文字符进行了不同的扩展。
+   * [ISO/IEC 8859-1](http://zh.wikipedia.org/wiki/ISO/IEC_8859-1)：国际标准化组织制订的8位字符集。它以ASCII为基础，扩展了集合范围，供附加符号的拉丁语言的使用。又称Latin-1或“西欧语言”。
+4. GB2312字符集与ISO/IEC 2202标准
+   * [GB2312](http://zh.wikipedia.org/wiki/GB_2312)：由中国国家标准总局制订的适应中国大陆地区简体字使用的字符编码。收录了6763个汉字及682个字符（包括拉丁字母、希腊字母、日文平假名及片假名字母、俄语西里尔字母）。GB2312是基于[EUC存储方式](http://zh.wikipedia.org/wiki/EUC)的双字节编码方式，第一个字节为高位字节，第二字节为低位字节。
+   * EUC的基础也是出自ISO/IEC，是被称为[ISO/IEC 2202](http://zh.wikipedia.org/wiki/ISO/IEC_2022)的7位编码标准。GB2312的制订正遵循了这一标准。 
+5. BIG5字符集与[CNS11643](http://zh.wikipedia.org/wiki/CNS11643)
+   * [BIG5](http://zh.wikipedia.org/zh-cn/%E5%A4%A7%E4%BA%94%E7%A2%BC)：港澳台同胞使用的繁体汉字字符编码。也称大五码。Windows的繁体中文版是基于这种编码进行开发的。它包括了13,060个汉字及441个字符。它也是一种双字节编码方式，每个字符的首个字节为高位字节，第二个字节为低位字节。
+   * [CNS11643](http://zh.wikipedia.org/wiki/CNS11643):中文标准交换码，2003年，BIG5字符集被追加到了CNS11643的附录中，拥有了较为正式的地位。CNS11543是中华民国/中国台湾地区的国家标准。向国际标准组织提交了申请，但未查到是否申请通过，且国际标准的编码是什么。
+6. Unicode与ISO IEC 10646，还有UCS
+   * 前面提到的字符集都是适用于某一特定语言的使用需要，但不适用于多语言环境，Unicode的制定则是旨在推出一种适用于所有语言的替代性方案。
+   * Unicode是原本由两个组织各自独自制定，后来双方将各自的工作成果合并起来共同推出的标准（一是ISO/IEC小组制定的ISO/IEC 10646标准，一个是Xerox及苹果等软件商组成的统一码联盟制定的Unicode标准）。Unicode经历了多个版本的演变（1991年到2012年，从1.0一直到6.2版），现在可以说实现了最初的设计目标。
+   * ISO/IEC 10646其编号代表是ISO/IEC 646标准（ASCII）的扩展。两个组织意识到各自为政，推出两套不同的标准没有必要，所以将它们合并起来。就是现在的Unicode，也就是
 
 ##概念的PK
 
