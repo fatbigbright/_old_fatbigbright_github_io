@@ -34,7 +34,7 @@ tags: [博客阅读笔记, 微软, dev]
 下面来介绍一下出镜率很高的字符集与相应的标准：
 
 1. ASCII字符集与ISO/IEC 646标准
-   * [ASCII](http://zh.wikipedia.org/wiki/ASCII)：美国信息交换标准代码（**A**merican **S**tandard **C**ode for **I**nformation **I**nterchange）。它是一种7bit位编码方式——实际当中，是用8位即一个字节来存储，最高位b7用作[奇偶校验](http://zh.wikipedia.org/zh-cn/%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E4%BD%8D)，这一信息未在维基百科中查到——，7个bit位最多可以表示128个字符（2的7次方），它包含了各种非打印控制符、符号、数字及英文大小写字母。也就是说ASCII是128个字符集合的字符编码集。
+   * [ASCII](http://zh.wikipedia.org/wiki/ASCII)：美国信息交换标准代码（**A**merican **S**tandard **C**ode for **I**nformation **I**nterchange）。它是一种7bit位编码方式，7个bit位最多可以表示128个字符（2的7次方），它包含了各种非打印控制符、符号、数字及英文大小写字母。也就是说ASCII是128个字符集合的字符编码集。
    * [ISO/IEC 646](http://zh.wikipedia.org/wiki/ISO_646)，ISO/IEC小组在ASCII的基础上将其标准化，就是ISO/IEC 646标准。   
 2. EASCII字符集与ISO/IEC 8859标准
    * [EASCII](http://zh.wikipedia.org/wiki/EASCII)：扩展美国信息交换标准代码（**E**xtended **ASCII**）,它将ASCII的b7这个奇偶校验位包括进来，用以扩展编码集的可表示范围，从而字符容量增加到了256个。其中编号0-127的字符与ASCII相同，128-255字符作为扩充的部分，表示一些表格符号、计算符号、希腊符号及特殊的拉丁符号，用以适应欧洲非英语国家的字符使用需要。也就是说，它是完全兼容ASCII编码的。ISO/IEC小组制定的[ISO/IEC 8859](http://zh.wikipedia.org/zh-cn/ISO/IEC_8859)标准之一[ISO/IEC 8859-1](http://zh.wikipedia.org/wiki/ISO/IEC_8859-1)，从维基百科上来看，这一标准所定义的字符集是与EASCII一致的。ISO/IEC 8859是一系列8位西文字符编码标准，它们基于ASCII对不同的西文字符进行了不同的扩展。
@@ -74,9 +74,12 @@ ASCII是128个字符组成的集合。
 
 ##乱码的种类
 
+##结语
+我在资料查询过程中，强烈地发现维基百科英文版的资料详细度与准确度大大高于中文版。看来还是前者的维护人群更大，毕竟计算机科学发源于西方，并且西方人士的参与度更高。
+
 参考资料：
 
-* [ASCII字符编码](http://zh.wikipedia.org/wiki/ASCII)
+* [ASCII字符编码](http://en.wikipedia.org/wiki/Ascii)
 * [EASCII字符编码](http://zh.wikipedia.org/wiki/EASCII)
 * [GB2312字符编码](http://zh.wikipedia.org/wiki/GB_2312)
 * [GBK]()
