@@ -1,5 +1,6 @@
 _site/*
 server/*
+pyenv/*
 _theme_packages/*
 
 Thumbs.db
