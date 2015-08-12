@@ -21,7 +21,7 @@ pygments是基于python的代码着色工具，读者可以访问其[项目主�
 2. 修改.gitignore文件，使git命令忽略pyenv下的所有目录、文件（包括子目录及文件）。
 3. 使用`source pyenv/bin/activate`激活新创建的依赖环境pyenv。这样一来，所有使用pip安装的python模块将只会在pyenv这个环境下可用。
 4. 进入当前所使用的jekyll的主题的样式目录，我`~/git/fatbigbright.github.com/assets/themes/<当前主题>/css`。
-5. 使用`pygmentize -S native -f html > pygments.css`命令，生成语法着色的样式表。
+5. 使用`pygmentize -S <着色样式> -f html > pygments.css`命令，生成语法着色的样式表。我选择的“<着色样式>”是vim。
 6. 修改`_includes/themes/<当前主题>/default.html`，将生成的样式表路径引入到这个文件中。`<link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygments.css">`。
 
 ## Tips
